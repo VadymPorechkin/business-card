@@ -1,0 +1,77 @@
+body {
+  margin: 20px;
+  /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #d7c681;
+  color: #3d190c;
+  border-bottom: 10px solid #ac5627;
+  border-radius: 0 0 2% 2%;
+  box-shadow: 2px 2px 2px 2px rgb(148 137 87 / 15%); /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.card:hover {
+  border-bottom: 10px solid #d19772;
+}
+
+@keyframes cardHoverEffect {
+  from {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(209, 151, 114, 0.2);
+  }
+  to {
+    transform: translateY(-10px); /* Піднімаємо картку на 10px */
+    box-shadow: 0 12px 24px rgba(209, 151, 114, 0.4); /* Збільшуємо тінь */
+  }
+}
+
+.card:hover {
+  animation-name: cardHoverEffect;
+  animation-duration: 0.5s; /* Тривалість анімації */
+  animation-timing-function: ease-in-out; /* Плавний вихід */
+  animation-fill-mode: forwards; /* Зберігаємо кінцевий стан анімації */
+}
+/*
+
+
+.border-blue {
+  border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
